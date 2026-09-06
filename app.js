@@ -188,6 +188,8 @@
       } else {
         successRegion.textContent = "Your request was submitted. The Clerk's office will contact you at the email or phone you provided.";
         successRegion.classList.add("has-success");
+        successRegion.scrollIntoView({ block: "start" });
+        successRegion.focus();
       }
     });
   }
